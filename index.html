@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Заголовки -->
+    <h1>Recipe Manager</h1>
+    <h2>Менеджер рецептів</h2>
+
+    <!-- Параграф -->
+    <p>
+        Веб-версія мобільного додатку для зберігання, пошуку та сортування кулінарних рецептів.
+        Додаток побудовано на <strong>Kotlin</strong> з використанням <em>Room Database</em>
+        та архітектури <mark>MVVM</mark>.
+    </p>
+
+    <hr>
+
+    <!-- Групування + різні стилі тексту -->
+    <h2>Про додаток</h2>
+
+    <p>
+        Recipe Manager — це <strong>зручний інструмент</strong> для кулінарів.
+        Він дозволяє <em>зберігати власні рецепти</em>, шукати їх за інгредієнтами
+        та сортувати за <u>часом приготування</u>, <mark>складністю</mark> або назвою.
+    </p>
+
+    <blockquote>
+        Всі дані зберігаються локально на пристрої — інтернет не потрібен.
+    </blockquote>
+
+    <p>
+        Алгоритми пошуку реалізовані у файлі <code>SearchAlgorithms.kt</code>,
+        а сортування — у <code>SortingAlgorithms.kt</code>.
+    </p>
+
+    <hr>
+
+    <!-- Список (ненумерований) -->
+    <h2>Функціонал</h2>
+    <ul>
+        <li>Додавання рецептів (назва, інгредієнти, складність, час, інструкція)</li>
+        <li>Пошук за назвою (бінарний пошук)</li>
+        <li>Пошук за інгредієнтами (лінійний пошук)</li>
+        <li>Сортування за різними критеріями (QuickSort)</li>
+        <li>Редагування та видалення рецептів</li>
+        <li>Локальне зберігання (Room Database)</li>
+    </ul>
+
+    <!-- Список (нумерований) -->
+    <h3>Як додати рецепт</h3>
+    <ol>
+        <li>Натисніть кнопку "+"</li>
+        <li>Заповніть назву та інгредієнти</li>
+        <li>Оберіть складність</li>
+        <li>Вкажіть час приготування</li>
+        <li>Натисніть "Зберегти"</li>
+    </ol>
+
+    <hr>
+
+    <!-- Таблиця -->
+    <h2>Алгоритми</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Алгоритм</th>
+                <th>Призначення</th>
+                <th>Складність</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Лінійний пошук</td>
+                <td>Пошук за інгредієнтами</td>
+                <td><code>O(n)</code></td>
+            </tr>
+            <tr>
+                <td>Бінарний пошук</td>
+                <td>Пошук за точною назвою</td>
+                <td><code>O(log n)</code></td>
+            </tr>
+            <tr>
+                <td>QuickSort</td>
+                <td>Сортування рецептів</td>
+                <td><code>O(n log n)</code></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <!-- Зображення -->
+    <h2>Скріншот додатку</h2>
+    <img src="menu.jpg" alt="Скріншот Recipe Manager">
+
+    <hr>
+
+    <!-- Відео -->
+    <h2>Відео</h2>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/LqJFx6aMO2Q" title="Cooking Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <hr>
+
+    <!-- Форма + кнопки -->
+    <h2>Додати рецепт</h2>
+    <form onsubmit="event.preventDefault(); alert('Рецепт збережено (демо)');">
+        <label for="name">Назва рецепту</label>
+        <input type="text" id="name" placeholder="Наприклад: Борщ">
+
+        <label for="ingredients">Інгредієнти</label>
+        <textarea id="ingredients" placeholder="Кожен інгредієнт з нового рядка"></textarea>
+
+        <label for="difficulty">Складність</label>
+        <select id="difficulty">
+            <option value="easy">Легкий</option>
+            <option value="medium">Середній</option>
+            <option value="hard">Складний</option>
+        </select>
+
+        <label for="time">Час приготування (хвилини)</label>
+        <input type="number" id="time" placeholder="30">
+
+        <label for="instructions">Інструкція</label>
+        <textarea id="instructions" placeholder="Опишіть кроки приготування..."></textarea>
+
+        <button type="submit">Зберегти</button>
+        <button type="reset" class="secondary">Очистити</button>
+    </form>
+
+    <hr>
+
+    <!-- Футер -->
+    <footer>
+        <p>&copy; 2026 Recipe Manager —
+            <a href="https://github.com/SeriySpray/Recipe-manager">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

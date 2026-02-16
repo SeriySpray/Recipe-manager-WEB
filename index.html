@@ -1,153 +1,100 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ua">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Manager</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Менеджер рецептів</title>
 </head>
 
-<body>
-
-    <!-- Заголовки -->
-    <h1>Recipe Manager</h1>
-    <h2>Менеджер рецептів</h2>
-
-    <!-- Параграф -->
-    <p>
-        Веб-версія мобільного додатку для зберігання, пошуку та сортування кулінарних рецептів.
-        Додаток побудовано на <strong>Kotlin</strong> з використанням <em>Room Database</em>
-        та архітектури <mark>MVVM</mark>.
-    </p>
-
+<body style="background-color: black; color: white;">
+    <h1>Менеджер рецептів</h1>
+    Це програма розрахована на користувачів що бажають знайти <em><strong>простий та зручний спосіб</strong></em>
+    організації своїх рецептів
     <hr>
-
-    <!-- Групування + різні стилі тексту -->
-    <h2>Про додаток</h2>
-
-    <p>
-        Recipe Manager — це <strong>зручний інструмент</strong> для кулінарів.
-        Він дозволяє <em>зберігати власні рецепти</em>, шукати їх за інгредієнтами
-        та сортувати за <u>часом приготування</u>, <mark>складністю</mark> або назвою.
-    </p>
-
-    <blockquote>
-        Всі дані зберігаються локально на пристрої — інтернет не потрібен.
-    </blockquote>
-
-    <p>
-        Алгоритми пошуку реалізовані у файлі <code>SearchAlgorithms.kt</code>,
-        а сортування — у <code>SortingAlgorithms.kt</code>.
-    </p>
-
-    <hr>
-
-    <!-- Список (ненумерований) -->
-    <h2>Функціонал</h2>
-    <ul>
-        <li>Додавання рецептів (назва, інгредієнти, складність, час, інструкція)</li>
-        <li>Пошук за назвою (бінарний пошук)</li>
-        <li>Пошук за інгредієнтами (лінійний пошук)</li>
-        <li>Сортування за різними критеріями (QuickSort)</li>
-        <li>Редагування та видалення рецептів</li>
-        <li>Локальне зберігання (Room Database)</li>
-    </ul>
-
-    <!-- Список (нумерований) -->
-    <h3>Як додати рецепт</h3>
+    <strong>Запланований функціонал:</strong>
     <ol>
-        <li>Натисніть кнопку "+"</li>
-        <li>Заповніть назву та інгредієнти</li>
-        <li>Оберіть складність</li>
-        <li>Вкажіть час приготування</li>
-        <li>Натисніть "Зберегти"</li>
+        <li> Додавання рецептів та їх збереження на сайті </li>
+        <li> Зручний пошук потрібних рецептів за інгредієнтами </li>
+        <li> Сортування рецептів за потрібними параметрами</li>
+        <li> Функціонал формування персонального тменб на кожен день неділі </li>
+        <li> Можливість організувати рецепти по папкам дляф зручної навігації</li>
     </ol>
 
     <hr>
 
-    <!-- Таблиця -->
-    <h2>Алгоритми</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Алгоритм</th>
-                <th>Призначення</th>
-                <th>Складність</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Лінійний пошук</td>
-                <td>Пошук за інгредієнтами</td>
-                <td><code>O(n)</code></td>
-            </tr>
-            <tr>
-                <td>Бінарний пошук</td>
-                <td>Пошук за точною назвою</td>
-                <td><code>O(log n)</code></td>
-            </tr>
-            <tr>
-                <td>QuickSort</td>
-                <td>Сортування рецептів</td>
-                <td><code>O(n log n)</code></td>
-            </tr>
-        </tbody>
+    <p> Оскільки ідея зрозуміла можемо описати алгоритмічну частину. <br>
+        Додаток базується на уже існуючій мобільній версії, <br>
+        в ході розробки використовувалась мова kotlin й відповідно під час розробки було використано
+        декілька стандартних алгоритмів </p>
+
+    <hr>
+
+    <hl> Перелік алгоритмів та їх часова та просторова складність </hl>
+
+    <table border="2">
+        <tr>
+            <th> Назва алгоритму</th>
+            <th> Назва функції в коді</th>
+            <th> Складність алгоритму</th>
+        </tr>
+        <tr>
+            <th> Бінарний пошук </th>
+            <td> binarySearchByName() </td>-
+            <td> O(log n) </td>
+        </tr>
+        <tr>
+            <th> Лінійний пошук </th>
+            <td> linearSearchByIngredients() </td>
+            <td> O(n) </td>
+        </tr>
     </table>
 
     <hr>
 
-    <!-- Зображення -->
-    <h2>Скріншот додатку</h2>
-    <img src="menu.jpg" alt="Скріншот Recipe Manager">
+    <h2> <span> Рецепт приготування смаженою курки з соусом теріякі <span> </h2>
+    <iframe src="https://www.youtube.com/embed/LqJFx6aMO2Q?autoplay=1" width="790" height="530"
+        allow="autoplay"></iframe>
+    <image
+        src="https://instagram.fiev15-1.fna.fbcdn.net/v/t51.75761-15/475977258_18484749457031788_7757287051762761009_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzU1ODMxODQ4MTQyNzczMzAzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=zs49nHZXfGcQ7kNvwE0Zha0&_nc_oc=Adkv5hyhEFpHa4SgNl5AUa_XYiP9NFtISEF9pCoS42GnhbGgDRK65jEEK4LJ6UHfFSw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fiev15-1.fna&_nc_gid=8tupBhHMWJAJ0kImZu1sjQ&oh=00_Afsi1nkKHF8KCqQqF66lvGZwdO_MOZMpa5QLcYtCtrWSOg&oe=699956FC"
+        width="490" height="530" border="2"> </image>
+    <image
+        src="https://instagram.fiev15-1.fna.fbcdn.net/v/t51.75761-15/476087275_18484749466031788_9203272816527343498_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzU1ODMxODQ4MTQzNjExOTIwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=uNP5JW2RVBoQ7kNvwFq2dD0&_nc_oc=Adn_bPayf804SPBJQAfEfsgfMfCc8pKMocHc-Lufm98pa4ZBk_eQvQ9cmSK5RI58-bI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fiev15-1.fna&_nc_gid=8tupBhHMWJAJ0kImZu1sjQ&oh=00_AfvNewPmYfkMTR0U-BP3CHETUcLLohDP-PSThVIjUYw2wQ&oe=69994B09"
+         width="490" height="530" border="2"> </image>
 
-    <hr>
+    <h2> Зразок інтерфесу створення рецепту </h2>
 
-    <!-- Відео -->
-    <h2>Відео</h2>
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LqJFx6aMO2Q" title="Cooking Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-    </div>
+    <form>
+    <p> Додати новий рецепт </p>
 
-    <hr>
+    <input type="text" placeholder="Введіть назву рецепту"
+    style="background-color: black; color: white; width: 320px; height: 20px;"> <br> <br>
+    
+    <textarea type="text" placeholder="Введіть інгредієнти (кожен з нового рядка)"
+    style="background-color: black; color: white; width: 320px; height: 80px;"></textarea> <br> <br>
 
-    <!-- Форма + кнопки -->
-    <h2>Додати рецепт</h2>
-    <form onsubmit="event.preventDefault(); alert('Рецепт збережено (демо)');">
-        <label for="name">Назва рецепту</label>
-        <input type="text" id="name" placeholder="Наприклад: Борщ">
+    Складність:
+    <input type="radio" name=dif style="accent-color: greenyellow;">
+    <label style="color: yellowgreen;">  Легка </label>
+    <input type="radio" name=dif style="accent-color: orange;">
+    <label style="color: orange;"> Середня </label>
+    <input type="radio" name=dif style="accent-color: red">
+    <label style="color: red;">  Важка </label> <br> <br>
 
-        <label for="ingredients">Інгредієнти</label>
-        <textarea id="ingredients" placeholder="Кожен інгредієнт з нового рядка"></textarea>
+    <input type="number" placeholder="Час приготування(в хв)"
+    style="background-color: black; color: white; width: 320px; height: 20px;"> <br> <br>
 
-        <label for="difficulty">Складність</label>
-        <select id="difficulty">
-            <option value="easy">Легкий</option>
-            <option value="medium">Середній</option>
-            <option value="hard">Складний</option>
-        </select>
+    <textarea type="text" placeholder="Повна інструкція з приготування"
+    style="background-color: black; color: white; width: 320px; height: 200px;"></textarea> <br> <br>
 
-        <label for="time">Час приготування (хвилини)</label>
-        <input type="number" id="time" placeholder="30">
+     <button type="submit"
+    style="width: 160px; height: 20px; color: black;"> <strong>Зберегти</strong> </button>
+    <button type="submit"
+    style="width: 160px; height: 20px; background-color: black; color: white;"> <strong>Скасувати</strong> </button> <br> <br>
 
-        <label for="instructions">Інструкція</label>
-        <textarea id="instructions" placeholder="Опишіть кроки приготування..."></textarea>
-
-        <button type="submit">Зберегти</button>
-        <button type="reset" class="secondary">Очистити</button>
     </form>
 
-    <hr>
 
-    <!-- Футер -->
-    <footer>
-        <p>&copy; 2026 Recipe Manager —
-            <a href="https://github.com/SeriySpray/Recipe-manager">GitHub</a>
-        </p>
-    </footer>
 
 </body>
 

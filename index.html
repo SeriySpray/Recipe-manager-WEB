@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Менеджер рецептів</title>
 </head>
+<style>
+    .navigation {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+        padding: 4px 10px;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+</style>
 
 <body style="background-color: black; color: white;">
+
+    <nav class="navigation">
+        <a href="index.html">Головна</a>
+        <a href="recipe-info.html">Рецепт</a>
+        <a href="add-recipe.html">Додати</a>
+        <a href="daily-menu.html">Меню</a>
+        <a href="settings.html">Налаштування</a>
+        <a href="edit-recipe.html">Редагувати</a>
+    </nav>
+
     <h1>Менеджер рецептів</h1>
     Це програма розрахована на користувачів що бажають знайти <em><strong>простий та зручний спосіб</strong></em>
     організації своїх рецептів
     <hr>
-    <strong>Запланований функціонал:</strong>
-    <ol>
+    <h2><strong>Запланований функціонал:</strong></h2>
+    <ul>
         <li> Додавання рецептів та їх збереження на сайті </li>
         <li> Зручний пошук потрібних рецептів за інгредієнтами </li>
         <li> Сортування рецептів за потрібними параметрами</li>
-        <li> Функціонал формування персонального тменб на кожен день неділі </li>
-        <li> Можливість організувати рецепти по папкам дляф зручної навігації</li>
-    </ol>
+        <li> Функціонал формування персонального меню на кожен день неділі </li>
+        <li> Можливість організувати рецепти по папкам для зручної навігації</li>
+    </ul>
 
     <hr>
 
@@ -30,9 +54,9 @@
 
     <hr>
 
-    <hl> Перелік алгоритмів та їх часова та просторова складність </hl>
+    <h2> Перелік алгоритмів та їх часова та просторова складність</h2>
 
-    <table border="2">
+    <table border="2" style="border-color: white;">
         <tr>
             <th> Назва алгоритму</th>
             <th> Назва функції в коді</th>
@@ -40,7 +64,7 @@
         </tr>
         <tr>
             <th> Бінарний пошук </th>
-            <td> binarySearchByName() </td>-
+            <td> binarySearchByName() </td>
             <td> O(log n) </td>
         </tr>
         <tr>
@@ -53,49 +77,59 @@
     <hr>
 
     <h2> <span> Рецепт приготування смаженою курки з соусом теріякі <span> </h2>
-    <iframe src="https://www.youtube.com/embed/LqJFx6aMO2Q?autoplay=1" width="790" height="530"
-        allow="autoplay"></iframe>
+    <iframe src="https://www.youtube.com/embed/LqJFx6aMO2Q?autoplay=1" width="460" height="450" allow="autoplay"
+        style="border-color: white;"></iframe>
     <image
-        src="https://instagram.fiev15-1.fna.fbcdn.net/v/t51.75761-15/475977258_18484749457031788_7757287051762761009_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ig_cache_key=MzU1ODMxODQ4MTQyNzczMzAzNw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=zs49nHZXfGcQ7kNvwE0Zha0&_nc_oc=Adkv5hyhEFpHa4SgNl5AUa_XYiP9NFtISEF9pCoS42GnhbGgDRK65jEEK4LJ6UHfFSw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fiev15-1.fna&_nc_gid=8tupBhHMWJAJ0kImZu1sjQ&oh=00_Afsi1nkKHF8KCqQqF66lvGZwdO_MOZMpa5QLcYtCtrWSOg&oe=699956FC"
-        width="490" height="530" border="2"> </image>
+        src="https://img.tsn.ua/cached/259/tsn-0b4bc102/thumbs/1200x630/71/8a/8ec8c61cc262f2a9a9dc9ac4a6c88a71.jpg"
+        width="550" height="450" border="2"> </image>
     <image
-        src="https://instagram.fiev15-1.fna.fbcdn.net/v/t51.75761-15/476087275_18484749466031788_9203272816527343498_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzU1ODMxODQ4MTQzNjExOTIwMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTM1MC5zZHIuQzMifQ%3D%3D&_nc_ohc=uNP5JW2RVBoQ7kNvwFq2dD0&_nc_oc=Adn_bPayf804SPBJQAfEfsgfMfCc8pKMocHc-Lufm98pa4ZBk_eQvQ9cmSK5RI58-bI&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fiev15-1.fna&_nc_gid=8tupBhHMWJAJ0kImZu1sjQ&oh=00_AfvNewPmYfkMTR0U-BP3CHETUcLLohDP-PSThVIjUYw2wQ&oe=69994B09"
-         width="490" height="530" border="2"> </image>
+        src="https://i.ytimg.com/vi/CqFZ6Va70uI/maxresdefault.jpg"
+        width="550" height="450" border="2"> </image>
+    <br><br>
+    <hr>
 
     <h2> Зразок інтерфесу створення рецепту </h2>
 
     <form>
-    <p> Додати новий рецепт </p>
+        <p> <strong>Додати новий рецепт</strong> </p>
 
-    <input type="text" placeholder="Введіть назву рецепту"
-    style="background-color: black; color: white; width: 320px; height: 20px;"> <br> <br>
-    
-    <textarea type="text" placeholder="Введіть інгредієнти (кожен з нового рядка)"
-    style="background-color: black; color: white; width: 320px; height: 80px;"></textarea> <br> <br>
+        <input type="text" placeholder="Введіть назву рецепту"
+            style="background-color: black; border-color: white; color: white; width: 320px; height: 20px;"> <br> <br>
 
-    Складність:
-    <input type="radio" name=dif style="accent-color: greenyellow;">
-    <label style="color: yellowgreen;">  Легка </label>
-    <input type="radio" name=dif style="accent-color: orange;">
-    <label style="color: orange;"> Середня </label>
-    <input type="radio" name=dif style="accent-color: red">
-    <label style="color: red;">  Важка </label> <br> <br>
+        <textarea type="text" placeholder="Введіть інгредієнти (кожен з нового рядка)"
+            style="background-color: black; border-color: white; color: white; width: 320px; height: 80px;"></textarea>
+        <br> <br>
 
-    <input type="number" placeholder="Час приготування(в хв)"
-    style="background-color: black; color: white; width: 320px; height: 20px;"> <br> <br>
+        <strong>Складність:</strong>
+        <input type="radio" name=dif style="accent-color: greenyellow;">
+        <label style="color: yellowgreen;"> Легка </label>
+        <input type="radio" name=dif style="accent-color: orange;">
+        <label style="color: orange;"> Середня </label>
+        <input type="radio" name=dif style="accent-color: red">
+        <label style="color: red;"> Важка </label> <br> <br>
 
-    <textarea type="text" placeholder="Повна інструкція з приготування"
-    style="background-color: black; color: white; width: 320px; height: 200px;"></textarea> <br> <br>
+        <input type="number" placeholder="Час приготування(в хв)"
+            style="background-color: black; border-color: white; color: white; width: 320px; height: 20px;"> <br> <br>
 
-     <button type="submit"
-    style="width: 160px; height: 20px; color: black;"> <strong>Зберегти</strong> </button>
-    <button type="submit"
-    style="width: 160px; height: 20px; background-color: black; color: white;"> <strong>Скасувати</strong> </button> <br> <br>
+        <textarea type="text" placeholder="Повна інструкція з приготування"
+            style="background-color: black; border-color: white; color: white; width: 320px; height: 200px;"></textarea>
+        <br> <br>
 
+        <button type="submit" style="width: 160px; height: 20px; color: black; border-color: white; color: black;">
+            <strong>Зберегти</strong> </button>
+        <button type="submit"
+            style="width: 160px; height: 20px; background-color: black; border-color: white; color: white;">
+            <strong>Скасувати</strong> </button> <br> <br>
     </form>
 
+    <hr>
 
+    <footer>
+        <center> <a href="https://github.com/SeriySpray/Recipe-manager-WEB"> <strong
+                    style="font-size: x-large; color: white;"> Github </strong> </a>
+            <center>
 
+    </footer>
 </body>
 
 </html>

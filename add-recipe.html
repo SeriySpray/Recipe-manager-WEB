@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Додати рецепт</title>
+    <style>
+        input,
+        textarea,
+        select,
+        button {
+            background-color: black;
+            border-color: white;
+            color: black;
+        }
+
+        textarea {
+            width: 320px;
+            height: 80px;
+        }
+
+        .navigation {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 4px 10px;
+            text-decoration: none;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <nav class="navigation">
+        <a href="index.html">Головна</a>
+        <a href="recipe-info.html">Рецепт</a>
+        <a href="add-recipe.html">Додати</a>
+        <a href="daily-menu.html">Меню</a>
+        <a href="settings.html">Налаштування</a>
+        <a href="edit-recipe.html">Редагувати</a>
+    </nav>
+
+    <h1>Додати рецепт</h1>
+
+    <form>
+        <label>Назва рецепту:</label><br>
+        <input type="text" name="title" placeholder="Введіть назву"><br><br>
+
+        <label>Опис:</label><br>
+        <textarea name="description" placeholder="Введіть опис"></textarea><br><br>
+
+        <label>Інгредієнти:</label><br>
+        <textarea name="ingredients" placeholder="Перелічіть інгредієнти"></textarea><br><br>
+
+        <label>Калорійність (ккал):</label><br>
+        <input type="number" name="calories" placeholder="0"><br><br>
+
+        <label>Час приготування (хв):</label><br>
+        <input type="number" name="time" placeholder="0"><br><br>
+
+        <button type="submit" style="background-color: white;"><strong>Зберегти рецепт</strong></button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Налаштування</title>
+    <style>
+        input,
+        textarea,
+        select,
+        button {
+            background-color: black;
+            border-color: white;
+            color: white;
+        }
+
+        .navigation {
+            display: inline-block;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 4px 10px;
+            text-decoration: none;
+        }
+        a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body style="background-color: black; color: white;">
+
+    <nav class="navigation">
+        <a href="index.html">Головна</a>
+        <a href="recipe-info.html">Рецепт</a>
+        <a href="add-recipe.html">Додати</a>
+        <a href="daily-menu.html">Меню</a>
+        <a href="settings.html">Налаштування</a>
+        <a href="edit-recipe.html">Редагувати</a>
+    </nav>
+
+    <h1>Налаштування</h1>
+
+    <form>
+        <label>Ім'я користувача:</label><br>
+        <input type="text" name="username" placeholder="Введіть ім'я"><br><br>
+
+        <label>Добова норма калорій (ккал):</label><br>
+        <input type="number" name="daily_calories" placeholder="2000"><br><br>
+
+        <label>Мова:</label><br>
+        <select name="language">
+            <option value="uk">Українська</option>
+            <option value="en">English</option>
+        </select><br><br>
+
+        <label>Тема:</label><br>
+        <select name="theme">
+            <option value="dark">Темна</option>
+            <option value="light">Світла</option>
+        </select><br><br>
+
+        <button type="submit">Зберегти налаштування</button>
+    </form>
+
+</body>
+
+</html>
